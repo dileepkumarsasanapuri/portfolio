@@ -1,0 +1,131 @@
+/* Reset styles */
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+}
+
+/* Styles for mobile screens */
+@media only screen and (max-width: 768px) {
+    /* Adjustments for header */
+    .header {
+        height: 10vh;
+        padding: 0 1vw;
+    }
+
+    /* Adjustments for header h1 */
+    .header h1 {
+        font-size: 1.5rem; /* Adjust font size as needed */
+    }
+
+    /* Adjustments for navbar */
+    .navbar {
+        gap: 2vw;
+        display: none;
+        
+    }
+    .container{
+        flex-direction: column;
+    }
+
+    /* Adjustments for home-content */
+    .home-content {
+        width: 100%;
+        padding-top: 15vh;
+    }
+
+    /* Adjustments for home-image */
+    .home-image{
+      padding: 2vh 2vh;
+      margin-bottom: 2vh; 
+    }
+    .home-image img{
+        height: 30vh;
+    }
+
+    /* Adjustments for about section */
+    .about {
+        flex-direction: column; /* Stack about sections vertically */
+    }
+
+    .about-left img {
+        height: auto; /* Allow image height to adjust based on content */
+        width: 100%; /* Ensure image fills container */
+        margin: 0; /* Remove margin */
+        border-radius: 0; /* Remove border radius */
+        box-shadow: none; /* Remove box shadow */
+        display: none;
+    }
+
+    .about-right {
+        width: 100%;
+        margin-top: 5vh; /* Adjust margin as needed */
+        margin-bottom: 10vh; /* Adjust margin as needed */
+    }
+
+    /* Adjustments for boxes */
+    .boxes {
+        padding: 5vw; /* Adjust padding as needed */
+    }
+
+    .box {
+        width: 100%; /* Full width on mobile */
+        margin: 10px 0; /* Adjust margin as needed */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .box img {
+        height: auto; /* Allow image height to adjust based on content */
+        width: 100%; /* Ensure image fills container */
+        border-radius: 0; /* Remove border radius */
+    }
+
+    .box p,
+    .section-2.box p {
+        font-size: 10px;
+        padding: 0 2vw; /* Adjust padding as needed */
+        color: #fdf4f4; /* Adjust text color */
+    }
+    .skills p,.section-2 p{
+        font-size: 20px;
+    }
+
+    /* Adjustments for return button */
+    .return {
+        right: 1vw; /* Adjust button position */
+        bottom: 2vh; /* Adjust button position */
+    }
+#web,#web img{
+  height: fit-content;
+  width: fit-content;
+}
+/*    .return i {
+        font-size: 2rem;  Adjust icon size 
+        padding-left: 50%;  Adjust padding as needed 
+        padding-top: 0; Remove padding-top 
+        padding-bottom: 0; /* Remove padding-bottom 
+    }*/
+
+    /* Adjustments for contact details */
+    .contact-details {
+        flex-direction: column; /* Stack contact details vertically */
+        gap: 2vh; /* Adjust gap between items */
+    }
+
+    /* Adjustments for textarea */
+    textarea {
+        margin: 2vh auto; /* Center textarea */
+        width: 80%; /* Adjust width as needed */
+        max-width: 90%; /* Ensure textarea doesn't exceed screen width */
+    }
+
+    /* Adjustments for cta */
+    .cta {
+        padding: 15px 20px; /* Adjust padding as needed */
+        padding-left: 30%; /* Adjust padding-left as needed */
+    }
+
+    .cta:before {
+        left: 25%; /* Adjust position as needed */
+    }
+}
